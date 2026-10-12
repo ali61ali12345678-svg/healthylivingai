@@ -1,197 +1,109 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healthy Living AI - Akıllı Acil Durum & Sağlık Kolyesi</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Space Grotesk', sans-serif; }
-    .font-mono { font-family: 'JetBrains Mono', monospace; }
-  </style>
-</head>
-<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-emerald-500 selection:text-black">
-
-  <!-- Header -->
-  <header class="border-b border-emerald-500/20 bg-slate-900/90 backdrop-blur-md sticky top-0 z-40">
-    <div class="max-w-6xl mx-auto px-4 py-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center text-slate-950 font-black text-lg shadow-lg shadow-emerald-500/20">
-          HLAI
-        </div>
-        <div>
-          <h1 class="text-base sm:text-lg font-black tracking-tight text-white flex items-center gap-2">
-            HEALTHY LIVING AI <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">v1.0</span>
-          </h1>
-          <p class="text-xs text-slate-400">ESP32 Akıllı Acil Durum & Sağlık Kolyesi (Global Proje)</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-2">
-        <a href="https://youtube.com/@HEALTYLİVİNGAI" target="_blank" class="px-3 py-1.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs flex items-center gap-1.5 transition-all shadow-md">
-          ▶ YouTube: @HEALTYLİVİNGAI
-        </a>
-        <a href="#soru-sor" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/30 text-xs font-bold transition-all">
-          📬 Soru Sor
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Container -->
-  <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
-    
-    <!-- Hero / Tanıtım Kartı -->
-    <section class="bg-gradient-to-br from-slate-900 via-slate-900/90 to-emerald-950/30 border border-emerald-500/30 rounded-3xl p-6 sm:p-8 space-y-5 shadow-2xl relative overflow-hidden">
-      <div class="space-y-3 max-w-3xl">
-        <span class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
-          🌍 Tüm Dünyaya ve Ziyaretçilere Açık Teknoloji Projesi
-        </span>
-        <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight leading-tight">
-          Tehlike Anında Hayat Kurtaran Yeni Nesil Giyilebilir Koruma Kalkanı 📿🛡️
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-          Silah veya yüksek patlama sesi duyulduğunda + insanın kalbi korku ve adrenalinle fırladığında, kolye tehlikeyi saniyesinde teyit edip otomatik olarak <strong>Polise (112) ve Aileye canlı GPS konum linki</strong> atar.
-        </p>
-        <div class="pt-2 flex items-center gap-3 flex-wrap">
-          <button onclick="document.getElementById('necklace-modal').classList.remove('hidden')" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-black text-xs sm:text-sm transition-all shadow-lg shadow-emerald-500/25 active:scale-95">
-            ✨ Akıllı Kolye Hakkında Kapsamlı Bilgi Al (Tıkla)
-          </button>
-          <a href="#soru-sor" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/30 text-xs font-bold transition-all">
-            💬 Ekibe Soru Sor
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Soru Sor & İletişim Masası -->
-    <section id="soru-sor" class="bg-slate-900/80 border border-amber-500/30 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl">
-      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 border-b border-slate-800 pb-4">
-        <div>
-          <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
-            📬 Herkese Açık Danışma Hattı
-          </span>
-          <h3 class="text-xl sm:text-2xl font-black text-white mt-2">
-            Healthy Living AI Ekibine Soru Sor
-          </h3>
-          <p class="text-xs text-slate-400">Akıllı kolye donanımı veya kodlar hakkında merak ettiğin her şeyi sorabilirsin.</p>
-        </div>
-        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-right">
-          <div class="text-[10px] text-slate-500">Resmi E-Posta:</div>
-          <a href="mailto:healtylivingai@gmail.com" class="text-xs font-mono font-bold text-emerald-400 hover:underline">
-            healtylivingai@gmail.com
-          </a>
-        </div>
-      </div>
-
-      <form onsubmit="handleSendQuestion(event)" class="space-y-4 max-w-3xl">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-xs font-bold text-slate-300 mb-1">Adınız:</label>
-            <input type="text" id="q-name" placeholder="Örn: Ahmet / Mühendis Arkadaş" class="w-full bg-slate-950 border border-slate-800 focus:border-amber-400 rounded-xl px-4 py-2.5 text-xs text-white outline-none">
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-slate-300 mb-1">E-Postanız (Opsiyonel):</label>
-            <input type="email" id="q-email" placeholder="ornek@gmail.com" class="w-full bg-slate-950 border border-slate-800 focus:border-amber-400 rounded-xl px-4 py-2.5 text-xs text-white outline-none">
-          </div>
-        </div>
-        <div>
-          <label class="block text-xs font-bold text-slate-300 mb-1">Sorunuz veya Mesajınız: *</label>
-          <textarea id="q-msg" required rows="4" placeholder="Kolyenin sensörleri nasıl çalışıyor? Bataryası kaç saat dayanıyor?" class="w-full bg-slate-950 border border-slate-800 focus:border-amber-400 rounded-xl p-4 text-xs text-white outline-none"></textarea>
-        </div>
-        <button type="submit" class="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-black text-xs flex items-center gap-2 hover:opacity-90 shadow-lg shadow-amber-500/20">
-          ✉️ Soruyu E-Posta ile Gönder (healtylivingai@gmail.com)
-        </button>
-      </form>
-    </section>
-
-  </main>
-
-  <!-- 10 CÜMLELİK AKILLI KOLYE MODALI -->
-  <div id="necklace-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-slate-900 border-2 border-emerald-500/50 rounded-3xl max-w-2xl w-full p-6 sm:p-8 space-y-4 shadow-2xl relative">
-      <button onclick="document.getElementById('necklace-modal').classList.add('hidden')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-800 text-slate-300 hover:text-white flex items-center justify-center font-bold">
-        ✕
-      </button>
-      <h3 class="text-xl font-black text-white flex items-center gap-2">
-        ✨ Healthy Living AI Akıllı Acil Durum Kolyesi Nedir?
+<!-- Soru Sor & İletişim Masası (Otomatik E-Posta Gönderimli) -->
+<section id="soru-sor" class="bg-slate-900/80 border border-amber-500/30 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl">
+  <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 border-b border-slate-800 pb-4">
+    <div>
+      <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+        📬 Herkese Açık Danışma Masası
+      </span>
+      <h3 class="text-xl sm:text-2xl font-black text-white mt-2">
+        Healthy Living AI Ekibine Soru Sor
       </h3>
-      <div class="space-y-2.5 text-xs sm:text-sm text-slate-200 leading-relaxed max-h-[60vh] overflow-y-auto pr-2">
-        <p><strong>1.</strong> Healthy Living AI, boyna asılan hafif ve ergonomik yapısıyla hem öğrencileri hem de tüm bireyleri tehlikelere karşı 7/24 korumak üzere tasarlanmış yerli bir akıllı kolye projesidir.</p>
-        <p><strong>2.</strong> Cihazın ana beyni olan çift çekirdekli ESP32 mikrodenetleyici, yüksek işlem gücüyle tüm sensörleri milisaniyeler seviyesinde eş zamanlı olarak analiz eder.</p>
-        <p><strong>3.</strong> Göğüs kafesine temas eden optik nabız sensörü (MAX30100 / Pulse Sensor), kullanıcının kalp atış hızını (BPM) sürekli ölçerek ani panik, korku veya sağlık krizlerini gerçek zamanlı takip eder.</p>
-        <p><strong>4.</strong> Donanımında yer alan MPU6050 6 eksenli jiroskop ve ivmeölçer, yaşlıların ya da bayılan bir bireyin yere düşmesini sarsıntı dalgalarından anında tespit eden gelişmiş bir düşme algılama algoritmasına sahiptir.</p>
-        <p><strong>5.</strong> Cihaz üzerindeki yüksek hassasiyetli mikrofon ve ses algılama modülü, okul veya sokak ortamında silah sesi ya da yüksek patlama gürültüsü duyulduğunda bunu anında tanımlar.</p>
-        <p><strong>6.</strong> Sistem, ani gürültü ile kullanıcının kalbinde oluşan taşikardi (ani nabız fırlaması) verisini çift sensör füzyonu ile birleştirerek sahte alarmları engeller ve gerçek tehlikeyi anında teyit eder.</p>
-        <p><strong>7.</strong> Tehlike anında dahili GY-NEO6MV2 GPS modülü sayesinde uydulardan anlık enlem ve boylam koordinatları hatasız biçimde hesaplanır.</p>
-        <p><strong>8.</strong> SIM800L GSM modülü, telefon çekmese veya internet olmasa dahi acil durum SMS'ini ve canlı Google Haritalar konum linkini doğrudan 112 Acil Çağrı Merkezi'ne ve aile fertlerine gönderir.</p>
-        <p><strong>9.</strong> Kolye üzerinde bulunan 0.96 inçlik düşük güç tüketimli OLED ekran, anlık nabız değerini, şebeke durumunu ve ultrasonik engel radarı verilerini kullanıcıya görsel olarak sunar.</p>
-        <p><strong>10.</strong> Gövde üzerindeki büyük fiziksel acil durum SOS butonu, kullanıcının tek bir dokunuşla 10 saniyelik geri sayımla acil çağrı başlatmasına veya yanlış basımları anında iptal etmesine olanak tanır.</p>
-        <p><strong>11.</strong> Lityum polimer (Li-Po) batarya, akıllı voltaj regülatörü ve donanımsal koruma sigortası sayesinde aşırı ısınmaya karşı güvenli, tek şarjla gün boyu kesintisiz çalışan bir koruma kalkanı sunar.</p>
-      </div>
-      <div class="pt-3 border-t border-slate-800 flex justify-end">
-        <button onclick="document.getElementById('necklace-modal').classList.add('hidden')" class="px-5 py-2 bg-emerald-500 text-slate-950 font-black text-xs rounded-xl hover:bg-emerald-400">
-          Anladım, Kapat ✓
-        </button>
-      </div>
+      <p class="text-xs text-slate-400">Akıllı kolye donanımı veya kodlar hakkında merak ettiğin her şeyi sorabilirsin.</p>
+    </div>
+    <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-right">
+      <div class="text-[10px] text-slate-500">Resmi E-Posta:</div>
+      <a href="mailto:healthylivingai@gmail.com" class="text-xs font-mono font-bold text-emerald-400 hover:underline">
+        healthylivingai@gmail.com
+      </a>
+      <div class="text-[10px] text-slate-500 mt-0.5">Healthy Living AI</div>
     </div>
   </div>
 
-  <!-- MANGA KAPKAÇ FLOATING PLAYER -->
-  <aside class="fixed bottom-4 right-4 z-40 max-w-xs sm:max-w-sm w-full">
-    <div class="bg-slate-900/95 backdrop-blur-md border-2 border-emerald-500/60 rounded-2xl p-3.5 shadow-2xl space-y-2">
-      <div class="flex items-center justify-between">
-        <div class="text-xs font-black text-white">maNga — Kapkaç 🤘</div>
-        <div class="text-[10px] text-emerald-400 font-mono">"Satılık değiliz bunu bildik"</div>
+  <!-- Doğrudan E-Posta Gönderen Form -->
+  <form onsubmit="handleSendQuestion(event)" class="space-y-4 max-w-3xl">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div>
+        <label class="block text-xs font-bold text-slate-300 mb-1">Adınız:</label>
+        <input type="text" id="q-name" required placeholder="Örn: Ahmet / Mühendis Arkadaş" class="w-full bg-slate-950 border border-slate-800 focus:border-amber-400 rounded-xl px-4 py-2.5 text-xs text-white outline-none">
       </div>
-      
-      <!-- Reklam Notu -->
-      <div class="p-2 bg-amber-950/40 border border-amber-500/30 rounded-xl text-amber-300 text-[10px] leading-tight">
-        ⚠️ <strong>Açılırken reklam çıkabilir:</strong> YouTube resmi yayını açıldığı için ilk 5 saniye A101 vb. reklam çıkabilir; reklam bitince şarkı başlar!
+      <div>
+        <label class="block text-xs font-bold text-slate-300 mb-1">Geri Dönüş E-Postanız: *</label>
+        <input type="email" id="q-email" required placeholder="ornek@gmail.com" class="w-full bg-slate-950 border border-slate-800 focus:border-amber-400 rounded-xl px-4 py-2.5 text-xs text-white outline-none">
       </div>
+    </div>
+    <div>
+      <label class="block text-xs font-bold text-slate-300 mb-1">Sorunuz veya Mesajınız: *</label>
+      <textarea id="q-msg" required rows="4" placeholder="Kolyenin sensörleri nasıl çalışıyor? Bataryası kaç saat dayanıyor?" class="w-full bg-slate-950 border border-slate-800 focus:border-amber-400 rounded-xl p-4 text-xs text-white outline-none"></textarea>
+    </div>
 
-      <div id="yt-player-box" class="hidden rounded-lg overflow-hidden aspect-video max-h-32 bg-black"></div>
+    <div class="flex flex-col sm:flex-row gap-3 pt-2">
+      <!-- Buton 1: Arka Planda Otomatik Gönderim -->
+      <button type="submit" id="submit-btn" class="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-black text-xs flex items-center justify-center gap-2 hover:opacity-90 shadow-lg shadow-amber-500/20">
+        🚀 Otomatik E-Posta Gönder
+      </button>
 
-      <button id="manga-btn" onclick="toggleMangaMusic()" class="w-full py-2 px-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition-all shadow-md">
-        ▶ maNga — Kapkaç Çal
+      <!-- Buton 2: Tarayıcıda Web Gmail Sekmesi Açma (Yedek Güvenli Yol) -->
+      <button type="button" onclick="openWebGmail()" class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/30 text-xs font-bold flex items-center justify-center gap-2">
+        🌐 Web Gmail'de Aç & Gönder
       </button>
     </div>
-  </aside>
 
-  <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    Healthy Living AI • Nilüfer / Bursa • healtylivingai@gmail.com
-  </footer>
+    <!-- Bildirim Kutusu -->
+    <div id="status-box" class="hidden p-4 rounded-xl text-xs font-bold"></div>
+  </form>
+</section>
 
-  <script>
-    let isPlaying = false;
-    function toggleMangaMusic() {
-      const box = document.getElementById('yt-player-box');
-      const btn = document.getElementById('manga-btn');
-      if (!isPlaying) {
-        box.classList.remove('hidden');
-        box.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/qyuooReCwiU?autoplay=1&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
-        btn.textContent = '⏹ Müziği Durdur';
-        btn.className = 'w-full py-2 px-3 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs transition-all';
-        isPlaying = true;
+<script>
+  async function handleSendQuestion(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const box = document.getElementById('status-box');
+    const name = document.getElementById('q-name').value;
+    const email = document.getElementById('q-email').value;
+    const msg = document.getElementById('q-msg').value;
+
+    btn.disabled = true;
+    btn.innerHTML = '⏳ Gönderiliyor...';
+
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/healthylivingai@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          _subject: "Healthy Living AI - Yeni Ziyaretçi Sorusu (" + name + ")",
+          _captcha: "false",
+          isim: name,
+          eposta: email,
+          soru: msg,
+          tarih: new Date().toLocaleString("tr-TR")
+        })
+      });
+
+      if (res.ok) {
+        box.className = "p-4 rounded-xl text-xs font-bold bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 block";
+        box.innerHTML = "✅ Sorun <strong>healthylivingai@gmail.com</strong> adresine başarıyla iletildi! En kısa sürede yanıtlanacaktır.";
+        document.getElementById('q-msg').value = '';
       } else {
-        box.classList.add('hidden');
-        box.innerHTML = '';
-        btn.textContent = '▶ maNga — Kapkaç Çal';
-        btn.className = 'w-full py-2 px-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition-all';
-        isPlaying = false;
+        throw new Error('Gönderim başarısız');
       }
+    } catch (err) {
+      box.className = "p-4 rounded-xl text-xs font-bold bg-amber-950/80 border border-amber-500/50 text-amber-300 block";
+      box.innerHTML = "⚠️ Otomatik gönderim engellendi. Lütfen yanındaki <strong>'Web Gmail'de Aç & Gönder'</strong> butonuna tıklayarak doğrudan gönderin.";
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = '🚀 Otomatik E-Posta Gönder';
     }
+  }
 
-    function handleSendQuestion(e) {
-      e.preventDefault();
-      const name = document.getElementById('q-name').value || 'Ziyaretçi';
-      const email = document.getElementById('q-email').value || 'Belirtilmedi';
-      const msg = document.getElementById('q-msg').value;
-      const subject = encodeURIComponent('HealthyLivingAI Proje Sorusu: ' + name);
-      const body = encodeURIComponent('İsim: ' + name + '\nE-Posta: ' + email + '\n\nSoru:\n' + msg);
-      window.location.href = 'mailto:healtylivingai@gmail.com
-        ?subject=' + subject + '&body=' + body;
-    }
-  </script>
-</body>
-</html>
+  function openWebGmail() {
+    const name = document.getElementById('q-name').value || 'Ziyaretçi';
+    const email = document.getElementById('q-email').value || 'Belirtilmedi';
+    const msg = document.getElementById('q-msg').value || '';
+    const subject = encodeURIComponent("Healthy Living AI Sorusu (" + name + ")");
+    const body = encodeURIComponent("İsim: " + name + "\nE-Posta: " + email + "\n\nSoru / Mesaj:\n" + msg);
+    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=healthylivingai@gmail.com&su=" + subject + "&body=" + body, "_blank");
+  }
+</script>
