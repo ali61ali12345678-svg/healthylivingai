@@ -1,301 +1,278 @@
 <!DOCTYPE html>
-<html lang="tr" class="scroll-smooth">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HealthyLivingAI — Akıllı Sağlık Kolyesi & Resmi YouTube Kanalı</title>
+  <title>HealthyLivingAI — Akıllı Sağlık Kolyesi & maNga Kapkaç</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @keyframes pulse-glow {
-      0%, 100% { box-shadow: 0 0 25px rgba(16, 185, 129, 0.4), inset 0 0 15px rgba(16, 185, 129, 0.2); }
-      50% { box-shadow: 0 0 45px rgba(16, 185, 129, 0.7), inset 0 0 25px rgba(16, 185, 129, 0.4); }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 15px rgba(16, 185, 129, 0.4), inset 0 0 15px rgba(6, 182, 212, 0.2); }
+      50% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.8), inset 0 0 25px rgba(168, 85, 247, 0.4); }
     }
-    @keyframes gradient-x {
-      0%, 100% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
+    .neon-border {
+      animation: pulseGlow 3s infinite alternate;
     }
-    .neon-glow { animation: pulse-glow 3s infinite; }
-    .animate-gradient {
-      background-size: 200% 200%;
-      animation: gradient-x 6s ease infinite;
+    @keyframes waveBar {
+      0%, 100% { height: 4px; }
+      50% { height: 20px; }
     }
+    .eq-bar {
+      animation: waveBar 0.6s ease-in-out infinite alternate;
+    }
+    .eq-bar:nth-child(2) { animation-delay: 0.15s; }
+    .eq-bar:nth-child(3) { animation-delay: 0.35s; }
+    .eq-bar:nth-child(4) { animation-delay: 0.1s; }
+    .eq-bar:nth-child(5) { animation-delay: 0.25s; }
   </style>
 </head>
-<body class="bg-[#0a0f1d] text-gray-100 min-h-screen flex flex-col justify-between selection:bg-emerald-400 selection:text-black overflow-x-hidden">
+<body class="bg-gray-950 text-gray-100 font-sans selection:bg-emerald-500 selection:text-black pb-28">
 
-  <!-- Üst Menü / Navbar -->
-  <header class="border-b border-gray-800/80 bg-[#0a0f1d]/90 backdrop-blur-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+  <!-- Üst Menü -->
+  <header class="border-b border-gray-800 bg-gray-900/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-cyan-400 flex items-center justify-center text-xl shadow-lg shadow-emerald-500/30">
-          💎
-        </div>
+        <span class="text-3xl">💎</span>
         <div>
-          <span class="text-xl md:text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">
-            HEALTHYLIVING<span class="text-white">AI</span>
-          </span>
-          <span class="hidden sm:block text-[11px] text-emerald-400/80 font-semibold tracking-wide">AKILLI YAŞAM VE SAĞLIK KOLYESİ</span>
+          <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-emerald-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent">HEALTHYLIVINGAI</span>
+          <span class="block text-[10px] text-gray-400 tracking-widest font-mono">BİLİŞİM KULÜBÜ AR-GE PROJESİ</span>
         </div>
       </div>
-      
       <div class="flex items-center space-x-3">
-        <a href="https://www.youtube.com/@HEALTYLİVİNGAI/shorts" target="_blank" rel="noopener noreferrer"
-           class="bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-extrabold px-4 py-2 rounded-xl text-xs md:text-sm flex items-center space-x-2 transition transform hover:scale-105 shadow-lg shadow-red-600/40">
-          <i class="fab fa-youtube text-lg"></i>
-          <span>Shorts İzle</span>
+        <a href="https://www.youtube.com/@HEALTYLİVİNGAI" target="_blank" class="flex items-center space-x-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold px-4 py-2 rounded-full text-sm shadow-lg shadow-red-900/40 transition-all transform hover:scale-105">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>Kanalı Aç</span>
         </a>
       </div>
     </div>
   </header>
 
   <!-- Hero Bölümü -->
-  <main class="max-w-6xl mx-auto px-4 py-12 text-center">
-    
-    <!-- Neon Rozet -->
-    <div class="inline-flex items-center space-x-2 px-5 py-2 bg-gradient-to-r from-emerald-950/80 to-cyan-950/80 border border-emerald-500/50 rounded-full text-emerald-300 text-xs font-bold uppercase tracking-wider mb-6 shadow-lg shadow-emerald-500/20">
-      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
-      <span>Yeni Nesil Giyilebilir Güvenlik & Sağlık Teknolojisi</span>
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <div class="text-center space-y-4 mb-12">
+      <div class="inline-flex items-center space-x-2 bg-purple-950/70 border border-purple-500/50 text-purple-300 text-xs px-4 py-1.5 rounded-full font-mono uppercase tracking-wider">
+        <span>⚡ Yapay Zeka Destekli Biyometrik Koruma</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-black tracking-tight">
+        Geleceğin Akıllı Kolyesi: <br/>
+        <span class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">Sağlığın ve Güvenliğin Boynunda</span>
+      </h1>
+      <p class="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+        Yapay zeka analizli düşme tespiti, anlık kalp ritmi takibi ve SIM800L/GPS destekli acil durum SOS butonu bir arada.
+      </p>
     </div>
 
-    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-tight">
-      Hayatınızı Koruyan <br/>
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-300 to-blue-500 animate-gradient">
-        Yapay Zeka Destekli Kolye
-      </span>
-    </h1>
+    <!-- İnteraktif Kolye Ekran Simülatörü -->
+    <div class="bg-gray-900 border border-gray-800 rounded-3xl p-6 md:p-8 mb-16 shadow-2xl relative overflow-hidden">
+      <div class="absolute -top-24 -left-24 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-    <p class="text-gray-300 text-base md:text-xl mt-6 max-w-3xl mx-auto leading-relaxed">
-      Düşme anını mikrosaniyede tespit eden, tek tuşla yakınlarınıza SOS acil durum sinyali ileten, dahili OLED ekranlı ve ultra hafif akıllı boyun kalkanı.
-    </p>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- OLED Simülatör -->
+        <div class="flex flex-col items-center">
+          <div class="text-xs font-mono text-cyan-400 mb-2 uppercase tracking-widest">● Canlı SSD1306 OLED Ekranı</div>
+          <div class="w-72 h-44 bg-black border-4 border-gray-700 rounded-2xl p-4 flex flex-col justify-between shadow-inner neon-border">
+            <div class="flex justify-between items-center text-[11px] font-mono text-emerald-400">
+              <span>HL-AI v2.4</span>
+              <span>🔋 %96</span>
+            </div>
+            <div id="oledScreen" class="text-center my-auto font-mono text-cyan-300 transition-all duration-300">
+              <div class="text-2xl font-black text-emerald-400">76 BPM</div>
+              <div class="text-xs text-gray-400">NABIZ NORMAL</div>
+              <div class="text-[10px] text-purple-400 mt-1">DURUM: GÜVENLİ</div>
+            </div>
+            <div class="flex justify-between text-[10px] font-mono text-gray-500">
+              <span>GPS: AKTİF</span>
+              <span>GSM: HAZIR</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 mt-3 font-mono">Aşağıdaki test butonlarını dene!</p>
+        </div>
 
-    <!-- Hızlı Butonlar -->
-    <div class="mt-8 flex flex-wrap justify-center gap-4">
-      <a href="https://www.youtube.com/@HEALTYLİVİNGAI?sub_confirmation=1" target="_blank" rel="noopener noreferrer"
-         class="bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:brightness-110 text-white font-black px-8 py-4 rounded-2xl text-base flex items-center space-x-3 transition transform hover:-translate-y-1 shadow-2xl shadow-red-600/50">
-        <i class="fab fa-youtube text-2xl"></i>
-        <span>Kanalımıza Abone Ol</span>
-      </a>
-      <a href="#simulator" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:brightness-110 text-white font-bold px-7 py-4 rounded-2xl text-base transition transform hover:-translate-y-1 shadow-xl shadow-emerald-600/30 flex items-center space-x-2">
-        <span>🎮 Kolyeyi Test Et (Simülatör)</span>
-      </a>
+        <!-- Simülatör Kontrolleri -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-white flex items-center gap-2">
+            <span>🕹️</span> Donanım Test Paneli
+          </h3>
+          <p class="text-sm text-gray-400">Sensörlerin tetiklendiğinde OLED ekranda ve GSM modülünde nasıl tepki verdiğini simüle et:</p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <button onclick="setNormal()" class="bg-gray-800 hover:bg-gray-700 border border-gray-700 text-left p-3 rounded-xl transition text-xs font-mono">
+              <span class="block text-emerald-400 font-bold mb-1">🟢 Normal Durum</span>
+              Sensörler stabil veri okuyor
+            </button>
+            <button onclick="triggerFall()" class="bg-amber-950/50 hover:bg-amber-900/50 border border-amber-600/50 text-left p-3 rounded-xl transition text-xs font-mono">
+              <span class="block text-amber-400 font-bold mb-1">⚠️ Düşme Algıla</span>
+              MPU6050 ivmeölçer darbe tespiti
+            </button>
+            <button onclick="triggerSOS()" class="bg-red-950/50 hover:bg-red-900/50 border border-red-600/50 text-left p-3 rounded-xl transition text-xs font-mono">
+              <span class="block text-red-400 font-bold mb-1">🚨 Acil Durum (SOS)</span>
+              Hızlı SMS & Konum Çağrısı
+            </button>
+            <button onclick="triggerPulse()" class="bg-cyan-950/50 hover:bg-cyan-900/50 border border-cyan-600/50 text-left p-3 rounded-xl transition text-xs font-mono">
+              <span class="block text-cyan-400 font-bold mb-1">💓 Nabız Ölçümü</span>
+              Optik sensör taraması
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- CANLI SHORT'S BÖLÜMÜ (Tıklayınca Doğrudan Shorts Açılır) -->
-    <section class="mt-20 text-left">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-4 border-b border-gray-800">
+    <!-- YouTube Shorts Vitrini -->
+    <div class="mb-16">
+      <div class="flex items-center justify-between mb-6">
         <div>
-          <div class="flex items-center space-x-2 text-red-500 font-bold text-sm uppercase tracking-wider">
-            <i class="fab fa-youtube text-xl"></i>
-            <span>Resmi YouTube Shorts Videolarımız</span>
-          </div>
-          <h2 class="text-2xl md:text-3xl font-black text-white mt-1">Shorts Videolarını İzle</h2>
+          <h2 class="text-2xl font-black text-white flex items-center gap-2">
+            <span class="text-red-500">▶</span> YouTube Shorts Vitrini
+          </h2>
+          <p class="text-sm text-gray-400">@HEALTYLİVİNGAI kanalındaki kısa videolar ve projeler</p>
         </div>
-        <a href="https://www.youtube.com/@HEALTYLİVİNGAI/shorts" target="_blank" rel="noopener noreferrer" 
-           class="mt-3 sm:mt-0 text-emerald-400 hover:text-emerald-300 font-bold text-sm flex items-center space-x-1">
-          <span>Tüm Shorts'ları Aç</span>
-          <i class="fas fa-arrow-right"></i>
+        <a href="https://www.youtube.com/@HEALTYLİVİNGAI/shorts" target="_blank" class="text-xs text-red-400 hover:text-red-300 font-mono underline">
+          Tüm Shorts'ları Gör →
         </a>
       </div>
 
-      <!-- Shorts Kartları Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        
-        <!-- Shorts 1 -->
-        <a href="https://www.youtube.com/@HEALTYLİVİNGAI/shorts" target="_blank" rel="noopener noreferrer"
-           class="group relative bg-gradient-to-b from-gray-900 to-gray-950 rounded-3xl p-5 border border-red-500/30 hover:border-red-500 transition duration-300 transform hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-red-600/30 flex flex-col justify-between h-96 overflow-hidden">
-          <div class="absolute -right-10 -top-10 w-32 h-32 bg-red-600/10 rounded-full blur-2xl group-hover:bg-red-600/30 transition"></div>
-          <div>
-            <div class="w-12 h-12 rounded-2xl bg-red-600 flex items-center justify-center text-white text-xl shadow-lg shadow-red-600/50 group-hover:scale-110 transition">
-              <i class="fas fa-play"></i>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <a href="https://www.youtube.com/@HEALTYLİVİNGAI" target="_blank" class="group bg-gray-900 border border-gray-800 hover:border-red-500/50 rounded-2xl overflow-hidden transition-all duration-300 transform hover:-translate-y-1 block shadow-lg">
+          <div class="h-44 bg-gradient-to-tr from-gray-950 via-gray-900 to-red-950/40 p-4 flex flex-col justify-between">
+            <span class="bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-max">SHORTS</span>
+            <div class="text-center my-auto">
+              <span class="text-4xl">🚨</span>
+              <div class="text-xs font-mono text-gray-300 mt-2">Düşme Testi #1</div>
             </div>
-            <span class="inline-block mt-4 px-3 py-1 bg-red-950/80 border border-red-800/60 rounded-full text-red-400 text-xs font-black uppercase">
-              ⚡ Canlı Shorts
-            </span>
-            <h3 class="text-xl font-black text-white mt-3 group-hover:text-red-400 transition leading-snug">
-              Akıllı Kolyenin Düşme Testi & Canlı Tepkisi
-            </h3>
-            <p class="text-gray-400 text-sm mt-2">
-              Kolyeyi yere bıraktığımızda saniyesinde ekran uyarısı ve alarm nasıl devreye giriyor izleyin!
-            </p>
+            <span class="text-[11px] text-gray-400 font-mono">@HEALTYLİVİNGAI</span>
           </div>
-          <div class="pt-4 border-t border-gray-800/80 flex items-center justify-between text-xs font-bold text-gray-400 group-hover:text-white">
-            <span class="flex items-center space-x-1.5 text-red-400">
-              <i class="fab fa-youtube"></i>
-              <span>YouTube'da Aç</span>
-            </span>
-            <span class="text-gray-500">@HEALTYLİVİNGAI</span>
+          <div class="p-3 bg-gray-950">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-red-400 transition">Akıllı Kolye Acil Durumda Nasıl Tepki Verir?</h4>
           </div>
         </a>
 
-        <!-- Shorts 2 -->
-        <a href="https://www.youtube.com/@HEALTYLİVİNGAI/shorts" target="_blank" rel="noopener noreferrer"
-           class="group relative bg-gradient-to-b from-gray-900 to-gray-950 rounded-3xl p-5 border border-emerald-500/30 hover:border-emerald-500 transition duration-300 transform hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-emerald-600/30 flex flex-col justify-between h-96 overflow-hidden">
-          <div class="absolute -right-10 -top-10 w-32 h-32 bg-emerald-600/10 rounded-full blur-2xl group-hover:bg-emerald-600/30 transition"></div>
-          <div>
-            <div class="w-12 h-12 rounded-2xl bg-emerald-600 flex items-center justify-center text-white text-xl shadow-lg shadow-emerald-600/50 group-hover:scale-110 transition">
-              <i class="fas fa-heartbeat"></i>
+        <a href="https://www.youtube.com/@HEALTYLİVİNGAI" target="_blank" class="group bg-gray-900 border border-gray-800 hover:border-emerald-500/50 rounded-2xl overflow-hidden transition-all duration-300 transform hover:-translate-y-1 block shadow-lg">
+          <div class="h-44 bg-gradient-to-tr from-gray-950 via-gray-900 to-emerald-950/40 p-4 flex flex-col justify-between">
+            <span class="bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-max">SHORTS</span>
+            <div class="text-center my-auto">
+              <span class="text-4xl">💎</span>
+              <div class="text-xs font-mono text-gray-300 mt-2">OLED Ekran Arayüzü</div>
             </div>
-            <span class="inline-block mt-4 px-3 py-1 bg-emerald-950/80 border border-emerald-800/60 rounded-full text-emerald-400 text-xs font-black uppercase">
-              🚨 Acil Durum
-            </span>
-            <h3 class="text-xl font-black text-white mt-3 group-hover:text-emerald-400 transition leading-snug">
-              Tek Butonla Hayat Kurtaran SOS Çağrısı
-            </h3>
-            <p class="text-gray-400 text-sm mt-2">
-              Panik anında butona basıldığında sesli buzzer ve anlık bildirim sistemi nasıl çalışır?
-            </p>
+            <span class="text-[11px] text-gray-400 font-mono">@HEALTYLİVİNGAI</span>
           </div>
-          <div class="pt-4 border-t border-gray-800/80 flex items-center justify-between text-xs font-bold text-gray-400 group-hover:text-white">
-            <span class="flex items-center space-x-1.5 text-emerald-400">
-              <i class="fab fa-youtube"></i>
-              <span>Shorts İzle</span>
-            </span>
-            <span class="text-gray-500">@HEALTYLİVİNGAI</span>
+          <div class="p-3 bg-gray-950">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-emerald-400 transition">0.96 inç Ekranda Nabız Grafiği</h4>
           </div>
         </a>
 
-        <!-- Shorts 3 -->
-        <a href="https://www.youtube.com/@HEALTYLİVİNGAI/shorts" target="_blank" rel="noopener noreferrer"
-           class="group relative bg-gradient-to-b from-gray-900 to-gray-950 rounded-3xl p-5 border border-cyan-500/30 hover:border-cyan-500 transition duration-300 transform hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-cyan-600/30 flex flex-col justify-between h-96 overflow-hidden">
-          <div class="absolute -right-10 -top-10 w-32 h-32 bg-cyan-600/10 rounded-full blur-2xl group-hover:bg-cyan-600/30 transition"></div>
-          <div>
-            <div class="w-12 h-12 rounded-2xl bg-cyan-600 flex items-center justify-center text-white text-xl shadow-lg shadow-cyan-600/50 group-hover:scale-110 transition">
-              <i class="fas fa-microchip"></i>
+        <a href="https://www.youtube.com/@HEALTYLİVİNGAI" target="_blank" class="group bg-gray-900 border border-gray-800 hover:border-purple-500/50 rounded-2xl overflow-hidden transition-all duration-300 transform hover:-translate-y-1 block shadow-lg">
+          <div class="h-44 bg-gradient-to-tr from-gray-950 via-gray-900 to-purple-950/40 p-4 flex flex-col justify-between">
+            <span class="bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase w-max">SHORTS</span>
+            <div class="text-center my-auto">
+              <span class="text-4xl">🛰️</span>
+              <div class="text-xs font-mono text-gray-300 mt-2">GPS + GSM Takip</div>
             </div>
-            <span class="inline-block mt-4 px-3 py-1 bg-cyan-950/80 border border-cyan-800/60 rounded-full text-cyan-400 text-xs font-black uppercase">
-              🛠️ Üretim & Kodlama
-            </span>
-            <h3 class="text-xl font-black text-white mt-3 group-hover:text-cyan-400 transition leading-snug">
-              Kolyenin İç Devresi ve OLED Ekranı
-            </h3>
-            <p class="text-gray-400 text-sm mt-2">
-              Kolyenin içine yerleştirdiğimiz mini işlemci ve ekran devresinin çalışma anı!
-            </p>
+            <span class="text-[11px] text-gray-400 font-mono">@HEALTYLİVİNGAI</span>
           </div>
-          <div class="pt-4 border-t border-gray-800/80 flex items-center justify-between text-xs font-bold text-gray-400 group-hover:text-white">
-            <span class="flex items-center space-x-1.5 text-cyan-400">
-              <i class="fab fa-youtube"></i>
-              <span>Shorts İzle</span>
-            </span>
-            <span class="text-gray-500">@HEALTYLİVİNGAI</span>
+          <div class="p-3 bg-gray-950">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-purple-400 transition">Telefona Konum SMS Gönderme</h4>
           </div>
         </a>
-
       </div>
-    </section>
-
-    <!-- CANLI KOLYE SİMÜLATÖRÜ (İnteraktif Bölüm) -->
-    <section id="simulator" class="mt-20 bg-gradient-to-b from-gray-900/90 to-[#0c1427] border-2 border-emerald-500/40 rounded-3xl p-6 md:p-10 text-left shadow-2xl relative overflow-hidden">
-      <div class="max-w-3xl mx-auto text-center">
-        <span class="px-3.5 py-1.5 bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 rounded-full text-xs font-black tracking-wide uppercase">
-          ⚡ İnteraktif Deneyim
-        </span>
-        <h2 class="text-3xl md:text-4xl font-black text-white mt-3">Kolyenin Çalışmasını Şimdi Test Edin!</h2>
-        <p class="text-gray-300 text-sm md:text-base mt-2">Aşağıdaki butonlara tıklayarak kolyenin OLED ekranındaki tepkileri anlık gözlemleyin.</p>
-        
-        <!-- Sanal OLED Ekran -->
-        <div class="mt-8 bg-black border-4 border-gray-700 rounded-2xl p-6 max-w-sm mx-auto shadow-2xl neon-glow">
-          <div class="flex justify-between items-center text-[11px] text-cyan-400 font-mono mb-2 border-b border-gray-800 pb-1">
-            <span>HEALTHY-AI v2.4</span>
-            <span id="screen-time">12:45 ● BATT 98%</span>
-          </div>
-          <div id="oled-display" class="font-mono text-center py-6 min-h-[100px] flex flex-col justify-center items-center">
-            <span class="text-emerald-400 text-2xl font-black animate-pulse">● DURUM: GÜVENLİ</span>
-            <span class="text-gray-400 text-xs mt-2">Sensörler Aktif ve İzlemede</span>
-          </div>
-        </div>
-
-        <!-- Butonlar -->
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <button onclick="triggerSOS()" class="bg-red-600 hover:bg-red-500 text-white font-black px-6 py-3.5 rounded-xl text-sm transition transform active:scale-95 shadow-lg shadow-red-600/50 flex items-center space-x-2">
-            <span>🚨 SOS Butonuna Bas</span>
-          </button>
-          <button onclick="triggerFall()" class="bg-amber-600 hover:bg-amber-500 text-white font-black px-6 py-3.5 rounded-xl text-sm transition transform active:scale-95 shadow-lg shadow-amber-600/50 flex items-center space-x-2">
-            <span>📉 Düşme Algılat</span>
-          </button>
-          <button onclick="resetScreen()" class="bg-gray-800 hover:bg-gray-700 text-gray-300 font-bold px-6 py-3.5 rounded-xl text-sm transition border border-gray-700">
-            <span>🔄 Normale Döndür</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- KOLYE ÖZELLİKLERİ KARTLARI -->
-    <section class="mt-20 text-left">
-      <h2 class="text-2xl md:text-3xl font-black text-white mb-8">Donanım ve Güvenlik Yetenekleri</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <div class="bg-gray-900/70 p-6 rounded-3xl border border-gray-800 hover:border-emerald-500/50 transition duration-300">
-          <div class="text-3xl mb-3">📍</div>
-          <h3 class="text-lg font-bold text-white mb-2">Akıllı SOS Sinyali</h3>
-          <p class="text-gray-400 text-sm">Tehlike anında basıldığında buzzer alarmı açar ve önceden tanımlı kişilere yardım sinyali yollar.</p>
-        </div>
-
-        <div class="bg-gray-900/70 p-6 rounded-3xl border border-gray-800 hover:border-cyan-500/50 transition duration-300">
-          <div class="text-3xl mb-3">⚡</div>
-          <h3 class="text-lg font-bold text-white mb-2">Düşme & Hareketsizlik Algılama</h3>
-          <p class="text-gray-400 text-sm">Eğim ve ivme sensörleri darbe sonrası hareketsizliği tespit ederek otomatik imdat çağrısı başlatır.</p>
-        </div>
-
-        <div class="bg-gray-900/70 p-6 rounded-3xl border border-gray-800 hover:border-purple-500/50 transition duration-300">
-          <div class="text-3xl mb-3">📺</div>
-          <h3 class="text-lg font-bold text-white mb-2">0.96" Kristal OLED Ekran</h3>
-          <p class="text-gray-400 text-sm">Piksel bazlı aydınlatmayla pil harcamadan saati, şarjı ve sensör uyarılarını kristal netliğinde sunar.</p>
-        </div>
-
-      </div>
-    </section>
-
+    </div>
   </main>
 
-  <!-- Alt Bilgi / Footer -->
-  <footer class="border-t border-gray-800/80 bg-[#070b14] py-12 text-center text-sm text-gray-500 mt-20">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="flex items-center space-x-3">
-        <span class="text-2xl">💎</span>
-        <span class="font-black text-white text-base">HEALTHYLIVINGAI</span>
+  <!-- Sabit maNga - Kapkaç Neon Müzik Çalar (Alt Bar) -->
+  <div class="fixed bottom-3 left-3 right-3 md:left-auto md:right-6 md:w-96 bg-gray-900/95 border border-purple-500/60 rounded-2xl p-3 shadow-2xl backdrop-blur-md z-50 neon-border">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-3 overflow-hidden">
+        <div class="w-10 h-10 rounded-xl bg-purple-900/80 border border-purple-400/50 flex items-center justify-center text-xl shrink-0">
+          🎸
+        </div>
+        <div class="overflow-hidden">
+          <div class="flex items-center space-x-1.5">
+            <span class="text-xs font-black text-purple-300 tracking-wider">maNga — Kapkaç</span>
+            <div class="flex items-end space-x-0.5 h-3" id="equalizer">
+              <div class="w-0.5 bg-emerald-400 rounded eq-bar"></div>
+              <div class="w-0.5 bg-cyan-400 rounded eq-bar"></div>
+              <div class="w-0.5 bg-purple-400 rounded eq-bar"></div>
+              <div class="w-0.5 bg-emerald-400 rounded eq-bar"></div>
+            </div>
+          </div>
+          <p class="text-[10px] text-gray-400 truncate italic">"Satılık değiliz bunu bildik!"</p>
+        </div>
       </div>
-      <div class="flex items-center space-x-6 text-sm font-bold">
-        <a href="https://www.youtube.com/@HEALTYLİVİNGAI" target="_blank" class="text-red-500 hover:text-red-400 flex items-center space-x-1">
-          <i class="fab fa-youtube text-lg"></i>
-          <span>YouTube Kanalı</span>
-        </a>
-        <a href="https://www.youtube.com/@HEALTYLİVİNGAI/shorts" target="_blank" class="text-emerald-400 hover:text-emerald-300">
-          Shorts Videoları
-        </a>
-      </div>
-      <p class="text-xs text-gray-600">© 2026 HealthyLivingAI. Tüm hakları saklıdır.</p>
+
+      <!-- Çal / Durdur Butonu -->
+      <button id="playBtn" onclick="toggleAudio()" class="shrink-0 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-black font-extrabold text-xs px-3 py-2 rounded-xl flex items-center space-x-1 transition transform active:scale-95 shadow">
+        <span id="playIcon">▶</span>
+        <span id="playText">Çal</span>
+      </button>
     </div>
+
+    <!-- YouTube Music Embed (Orijinal qyuooReCwiU) -->
+    <div class="hidden" id="ytPlayerContainer"></div>
+  </div>
+
+  <footer class="border-t border-gray-900 py-6 text-center text-xs text-gray-500 font-mono">
+    <p>© 2026 HealthyLivingAI — Bilişim Kulübü & @HEALTYLİVİNGAI</p>
   </footer>
 
-  <!-- İnteraktif Simülatör Kodları -->
   <script>
-    const display = document.getElementById('oled-display');
+    // OLED Simülatör Fonksiyonları
+    const oled = document.getElementById('oledScreen');
 
-    function triggerSOS() {
-      display.innerHTML = `
-        <span class="text-red-500 text-2xl font-black animate-ping">⚠️ ACİL DURUM! ⚠️</span>
-        <span class="text-white text-xs mt-2 font-bold bg-red-950 px-3 py-1 rounded-full border border-red-600">SOS BUTONUNA BASILDI!</span>
-        <span class="text-red-400 text-[10px] mt-1">Buzzer Sinyali: AKTİF (BİİİP!)</span>
+    function setNormal() {
+      oled.innerHTML = `
+        <div class="text-2xl font-black text-emerald-400">76 BPM</div>
+        <div class="text-xs text-gray-400">NABIZ NORMAL</div>
+        <div class="text-[10px] text-purple-400 mt-1">DURUM: GÜVENLİ</div>
       `;
     }
 
     function triggerFall() {
-      display.innerHTML = `
-        <span class="text-amber-400 text-xl font-black">📉 DÜŞME ALGILANDI!</span>
-        <span class="text-gray-300 text-xs mt-2">Kullanıcı Hareketsiz mi?</span>
-        <span class="text-amber-300 text-[10px] mt-1 font-bold">10 Saniye İçinde İmdat Modu Açılıyor...</span>
+      oled.innerHTML = `
+        <div class="text-xl font-black text-amber-400 animate-pulse">⚠️ DÜŞME!</div>
+        <div class="text-xs text-gray-300">G-Force Eşiği Aşıldı</div>
+        <div class="text-[10px] text-amber-500 mt-1">Geri Sayım: 10 sn</div>
       `;
     }
 
-    function resetScreen() {
-      display.innerHTML = `
-        <span class="text-emerald-400 text-2xl font-black animate-pulse">● DURUM: GÜVENLİ</span>
-        <span class="text-gray-400 text-xs mt-2">Sensörler Aktif ve İzlemede</span>
+    function triggerSOS() {
+      oled.innerHTML = `
+        <div class="text-xl font-black text-red-500 animate-bounce">🚨 ACİL SOS!</div>
+        <div class="text-xs text-white">Konum SMS Gönderildi</div>
+        <div class="text-[10px] text-red-400 mt-1">SIM800L: Çağrı Aktif</div>
       `;
+    }
+
+    function triggerPulse() {
+      oled.innerHTML = `
+        <div class="text-xl font-black text-cyan-400">💓 Nabız: 118</div>
+        <div class="text-xs text-gray-300">SpO2: %98 (Normal)</div>
+        <div class="text-[10px] text-emerald-400 mt-1">Sensör: MAX30102</div>
+      `;
+    }
+
+    // maNga Kapkaç (qyuooReCwiU) Oynatıcı Kontrolü
+    let isPlaying = false;
+    const playIcon = document.getElementById('playIcon');
+    const playText = document.getElementById('playText');
+    const ytContainer = document.getElementById('ytPlayerContainer');
+    const equalizer = document.getElementById('equalizer');
+
+    function toggleAudio() {
+      if (!isPlaying) {
+        // Tam attığın linkin video ID'si ile başlat
+        ytContainer.innerHTML = '<iframe width="200" height="200" src="https://www.youtube.com/embed/qyuooReCwiU?autoplay=1&enablejsapi=1" allow="autoplay; encrypted-media"></iframe>';
+        playIcon.textContent = '⏸';
+        playText.textContent = 'Durdur';
+        equalizer.style.display = 'flex';
+        isPlaying = true;
+      } else {
+        ytContainer.innerHTML = '';
+        playIcon.textContent = '▶';
+        playText.textContent = 'Çal';
+        equalizer.style.display = 'none';
+        isPlaying = false;
+      }
     }
   </script>
-
 </body>
 </html>
